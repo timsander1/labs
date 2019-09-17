@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Azure Cosmos DB Bootstrap Program</title>
+  </head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+ 
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("./images/earth_dark.jpg");
+  min-height: 20%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+  
+  <body>
+    
+ <!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">BENEFITS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">SIGN UP</a>
+    </div>
+  </div>
+</div>
+    
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Open 24x7x365</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:40px"><br>The Azure Cosmos DB Bootstrap Program</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">www.cosmosdb.com</span>
+  </div>
+</header>
+    
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT THE AZURE COSMOS DB BOOTSTRAP PROGRAM</span></h5>
+    <p>Use this program to <mark>accelerate building or migrating your applications on <a href="https://www.cosmosdb.com">Azure Cosmos DB</a></mark>.</p>
+    
+    <p><span class="w3-tag">Once you nominate your project and it gets approved,</span> <b><u>for 6 weeks, you will have access to the engineers in the Cosmos DB team</u></b>, 
+      who would ensure that your application is built to achieve maximum performance at the lowest costs. 
+    <p>
+      An Azure Cosmos DB engineer will be assigned to your project who would assist you in all the stages starting 
+      from project inception to production deployment.</p>
+      
+    <p><span class="w3-tag">At the end of this program,</span> <b><u>you will have a stellar application which follows the best-practices 
+      for accessing data in Azure Cosmos DB and is optimized to provide the best TCO and performance</u></b>. 
+    </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"Cosmos DB Bootstrap Program was awesome! We went into production in just a few months, and Cosmos DB Engineers were with us all the way."</i></p>
+      <p>Anthony Blake, CentrumSoft</p>
+    </div>
+  </div>
+</div>
+  
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">NOMINATE YOUR PROJECT FOR COSMOS BOOTSTRAP NOW</span></h5>
+    <!-- <img src="./images/map.jpg" class="w3-image" style="width:100%">-->
+    <p><span class="w3-tag">FYI!</span> The program costs nothing to you. <br> <center><mark><u>Engineering support comes completely free for 6 weeks.</u></mark></center></p>
+    <p><strong>Register your project below,</strong> and we will contact you right away:</p>
+    
+    <form action="https://getsimpleform.com/messages?form_api_token=5421f0e72012ca59c59e43cded3972e0" method="post">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Your email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Project\ Workload \ Description" required name="Workload"></p>
+      <p><button class="w3-button w3-black" type="submit">SUBMIT</button></p>
+    </form>
+    <p>If you have any questions, send them to us at <strong>AskCosmosDB@microsoft.com</strong></p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE BENEFITS OF AZURE COSMOS DB BOOTSTRAP PROGRAM</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Apps');" id="myLink">
+        <div class="w3-col s6 tablink">New Apps</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Migrations');">
+        <div class="w3-col s6 tablink">Migrations</div>
+      </a>
+    </div>
+    
+    <div id="Apps" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Direct and continuous assistance from Azure Cosmos DB engineers, who can help with:</h5>
+      <p class="w3-text-grey">
+       Architecture review, data modelling, partition Key selection, performance and cost optimization</p><br>
+    
+      <h5>Faster access to new and preview features </h5>
+      <p class="w3-text-grey">Access to features under gated private preview</p><br>
+    
+      <h5>Access to in-house tools and real customer experiences</h5>
+      <p class="w3-text-grey">Advisors, recommendations, tooling, custom and personalized recommendations</p><br>
+    
+      <h5>NDA roadmap briefings for Azure Cosmos DB</h5>
+      <p class="w3-text-grey">Early insights into the product roadmap</p><br>
+    
+      <h5>Code-with Azure Cosmos DB developers</h5>
+      <p class="w3-text-grey">Hackathons, code-with and live coding sessions</p><br>
+    
+      <h5>Assistance with POCs and production</h5>
+      <p class="w3-text-grey">Customized reports and dashboards relating to your Azure Cosmos DB usage</p>
+    </div>
+
+    <div id="Migrations" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Direct and continuous assistance from Azure Cosmos DB engineers, who can help with:</h5>
+      <p class="w3-text-grey">
+       Architecture review, data modelling, partition Key selection, performance and cost optimization</p><br>
+    
+      <h5>Faster access to new and preview features </h5>
+      <p class="w3-text-grey">Access to features under gated private preview</p><br>
+    
+      <h5>Access to in-house tools and real customer experiences</h5>
+      <p class="w3-text-grey">Advisors, recommendations, tooling, custom and personalized recommendations</p><br>
+    
+      <h5>NDA roadmap briefings for Azure Cosmos DB</h5>
+      <p class="w3-text-grey">Early insights into the product roadmap</p><br>
+    
+      <h5>Code-with Azure Cosmos DB developers</h5>
+      <p class="w3-text-grey">Hackathons, code-with and live coding sessions</p><br>
+    
+      <h5>Assistance with POCs and production</h5>
+      <p class="w3-text-grey">Customized reports and dashboards relating to your Azure Cosmos DB usage</p>
+    </div>  
+    
+    
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">AZURE COSMOS DB BOOTSTRAP PROGRAM - TYPICAL TIMELINE</span></h5>
+    <img src="./images/6weeks_narrow.png" style="width:100%;max-width:1000px;border:1px"><br/><br/>
+     <center><strong><mark>Production ready deployments on Azure Cosmos DB in 6 weeks or less!</mark><strong></center>
+  </div>
+</div>
+
+ <br/><br/> <p>Follow Azure Cosmos DB on Twitter <a href="https://twitter.com/AzureCosmosDB"><b>@AzureCosmosDB</b></a> and <a href="https://stackoverflow.com/questions/tagged/azure-cosmosdb"><b>StackOverflow</b></a>.</p>
+  
+
+<!-- End page content -->
+</div>
+   
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+    
+    
+  
+  </body>
+</html>
