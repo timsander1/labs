@@ -15,11 +15,54 @@ body, html {
   font-family: "Inconsolata", sans-serif;
 }
 
+.tab { margin-left: 400px; }
+
 .bgimg {
   background-position: center;
   background-size: cover;
-  background-image: url("./images/earth_dark.jpg");
+  background-color: rgb(0, 47, 175);
   min-height: 20%;
+}
+.divider {
+  background-color: black;
+  color: white;
+  margin: 0px;
+  padding: 20px;
+}
+.workshops {
+  background-color: black;
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+}
+
+.schedule {
+  background-color: white;
+  color: black;
+  margin: 0px;
+  padding: 20px;
+}
+
+.slides {
+  background-color: black;
+  color: white;
+  margin: 0px;
+  padding: 20px;
+}
+
+.labs {
+  background-color: white;
+  color: black;
+  margin: 0px;
+  padding: 20px;
+}
+
+.contact {
+  background-color: rgb(0, 47, 175);
+  color: white;
+  margin: 0px;
+  padding: 20px;
 }
 
 .menu {
@@ -36,13 +79,13 @@ body, html {
       <a href="#upcomingworkshops" class="w3-button w3-block w3-black">UPCOMING WORKSHOPS</a>
     </div>
     <div class="w3-col s3">
+        <a href="#schedule" class="w3-button w3-block w3-black">WORKSHOP SCHEDULE</a>
+      </div>
+    <div class="w3-col s3">
       <a href="#slides" class="w3-button w3-block w3-black">SLIDES</a>
     </div>
     <div class="w3-col s3">
       <a href="#labs" class="w3-button w3-block w3-black">HANDS-ON LABS</a>
-    </div>
-    <div class="w3-col s3">
-      <a href="#contact" class="w3-button w3-block w3-black">CONTACT US</a>
     </div>
   </div>
 </div>
@@ -56,41 +99,190 @@ body, html {
     
 <!-- Add a background color and large text to the whole page -->
 <div class="w3-sand w3-grayscale w3-large">
-  <br>
+
 
 <!-- Upcoming Workshops -->
-    <p><br><center><strong><h1  id="upcomingworkshops">Upcoming Workshops</strong></h1></center></p>
+  <center>
+<div class = "workshops" id="upcomingworkshops">
     <br>
+    <img src="./images/Houston.bmp" alt="Houston"><figcaption>Houston, Texas- September 25th</figcaption>       
+    <img src="./images/Dallas.bmp" alt="Dallas" ><figcaption>Dallas, Texas- September 26th</figcaption>
     <br>
-    <br>
-    <br>
-    <br>
+</div>
+<div class = "workshops"  >
     
-<!-- Workshop Slides -->
-    <p><br><center><strong><h1 id="slides">Slides</strong></h1></center></p>
-    <p><span class="w3-display-container" text-indent: 50px;>The Azure Cosmos DB Engineering team will use below slides when delivering an overview workshop: </span></p>
+    <br>
+    <img src="./images/Houston.bmp" alt="Houston"><figcaption>Houston, Texas- September 25th</figcaption>       
+    <img src="./images/Dallas.bmp" alt="Dallas" ><figcaption>Dallas, Texas- September 26th</figcaption>
+    <br>
+</div>
+<div class = "workshops" id="upcomingworkshops" >
+    <br>
+    <img src="./images/Houston.bmp" alt="Houston"><figcaption>Houston, Texas- September 25th</figcaption>       
+    <img src="./images/Dallas.bmp" alt="Dallas" ><figcaption>Dallas, Texas- September 26th</figcaption>
+    <br>
+</div>
+<div class = "workshops"  >
+    
+    <br>
+    <img src="./images/Houston.bmp" alt="Houston"><figcaption>Houston, Texas- September 25th</figcaption>       
+    <img src="./images/Dallas.bmp" alt="Dallas" ><figcaption>Dallas, Texas- September 26th</figcaption>
+    <br>
+</div>
+<div class = "workshops" id="upcomingworkshops" >
+    <br>
+    <img src="./images/Houston.bmp" alt="Houston"><figcaption>Houston, Texas- September 25th</figcaption>       
+    <img src="./images/Dallas.bmp" alt="Dallas" ><figcaption>Dallas, Texas- September 26th</figcaption>
+    <br>
+</div>
+
+    <!-- Workshop Schedule -->
+    <div class = "schedule" id="schedule">
+    <p><br><center><strong><h1>One Day Workshop Schedule</strong></h1></center></p>
     <br>
     <center>
-    <table style="width:100%">
-      <tr>
-        <td><a href="#https://github.com/CosmosDB/labs/tree/master/decks/Partitioning.pptx">Partitioning</a></td>
-        <td>Smith</td>
-      </tr>
-      <tr>
-        <td>Eve</td>
-        <td>Jackson</td>
-      </tr>
-      <tr>
-        <td>John</td>
-        <td>Doe</td>
-      </tr>
-    </table>
+    <TABLE  BORDER="5">
+        <TR>
+           <TH COLSPAN="2">
+              <H3><BR>Typical Workshop Schedule</H3>
+           </TH>
+        </TR>
+        <TR>
+           <TH>Topic</TH>
+           <TH>Duration</TH>
+        </TR>
+        
+        <TR>
+            <TH>Overview & Common Use Cases</TH>
+            <TH>30 min</TH>
+        </TR>
+        <TR>
+            <TH>Resource Model</TH>
+            <TH>15 min</TH>
+        </TR>
+        <TR>
+            <TH>Request Units & Billing</TH>
+            <TH>45 min</TH>
+        </TR>
+        <TR>
+            <TH>Data Modeling</TH>
+            <TH>45 min</TH>
+        </TR>
+        <TR>
+            <TH>Partitioning</TH>
+            <TH>30 min</TH>
+        </TR>
+        <TR>
+            <TH>Break</TH>
+            <TH></TH>
+        </TR>
+        <TR>
+            <TH>Lab 1 - Creating a container in Azure Cosmos DB</TH>
+            <TH>30 min</TH>
+        </TR>
+        <TR>
+            <TH>Lab 2 - Importing Data into Azure Cosmos DB with Azure Data Factory </TH>
+            <TH>30 min</TH>
+          </TR>
+           <TR>
+                <TH>SQL API Query</TH>
+                <TH>15 min</TH>
+           </TR>
+       <TR>
+          <TH>Lab 5 - Building a .NET Console App on Azure Cosmos DB</TH>
+          <TH>30 min</TH>
+     </TR>
+     <TR>
+        <TH>Change Feed</TH>
+        <TH>45 min</TH>
+   </TR>
+   <TR>
+      <TH>Lab 8 - Intro to Azure Cosmos DB Change Feed</TH>
+      <TH>60 min</TH>
+ </TR>
+ <TR>
+    <TH>Troubleshooting</TH>
+    <TH>45 min</TH>
+</TR>
+<TR>
+  <TH>Lab 9 - Troubleshooting Performance in Azure Cosmos DB</TH>
+  <TH>60 min</TH>
+</TR>
+    </TABLE>
+  </div>
   </center>
+<!-- Workshop Slides -->
+<div class = "slides"  id="slides">
+    <p><br><center><strong><h1>Slides</strong></h1></center></p>
     <br>
+    <center>
+    <p><span class="w3-display-container"><h3>The Azure Cosmos DB Engineering team will use below slides when delivering a 1 day deep-dive workshop </h3> </span></p>
+    <br>
+    <dl>
+        <p class="tab"><dt><strong><a href="https://github.com/CosmosDB/labs/tree/master/decks/Overview-Value-Proposition-Use-Cases.pptx">Overview</a></strong></dt></p>
+        <dd>High-level slides covering product overview and common use case patterns</dd>  
+        <br>
+        <br>
+        <p class="tab"><dt><strong><a href="https://github.com/CosmosDB/labs/tree/master/decks/Resource-Model.pptx">Resource Model</a></strong></dt></p>
+        <dd>Overview of Azure Cosmos DB accounts, databases, and containers</dd>
+        <br>
+        <br>
+        <p class="tab"><dt><strong><a href="https://github.com/CosmosDB/labs/tree/master/decks/Request-Units-Billing.pptx">Request Units & Billing</a></strong></dt></p>
+        <dd>Azure Cosmos DB pricing model, request units (RU's), and best practices for estimating total cost of ownership</dd>
+        <br>
+        <br>
+        <p class="tab"><dt><strong><a href="https://github.com/CosmosDB/labs/tree/master/decks/Data-Modeling.pptx">Data Modeling</a></strong></dt></p>
+        <dd>Best practices for modeling data in Azure Cosmos DB. Indexing slides are included here.</dd>
+        <br>
+        <br>        <p class="tab"><dt><strong><a href="https://github.com/CosmosDB/labs/tree/master/decks/Partitioning.pptx">Partitioning</a></strong></dt></p>
+        <dd>Best practices for partitioning data including examples</dd>
+        <br>
+        <br>
+        <p class="tab"><dt><strong><a href="https://github.com/CosmosDB/labs/tree/master/decks/SQL-API-Query.pptx">SQL API Query</a></strong></dt></p>
+        <dd>An introduction to the query features available in the Core (SQL) API</dd>
+        <br>
+        <br>
+        <p class="tab"><dt><strong><a href="https://github.com/CosmosDB/labs/tree/master/decks/Change-Feed.pptx">Change Feed</a></strong></dt></p>
+        <dd>Common change feed design patterns and best practices for implementation</dd>
+        <br>
+        <br>
+    </dl>
+    <br>
+    <p><span class="w3-display-container">For additional slides, please view our <a href="#https://github.com/CosmosDB/labs/">workshop content repository</a>.</span></p>
+  </center>
+  </div>
 <!-- Hands-On Labs -->
-    <p><br><center><strong><h1 id="labs">Hands-On Labs</strong></h1></center></p>
-
- <br/><br/> <p>Follow Azure Cosmos DB on Twitter <a href="https://twitter.com/AzureCosmosDB"><b>@AzureCosmosDB</b></a> and <a href="https://stackoverflow.com/questions/tagged/azure-cosmosdb"><b>StackOverflow</b></a>.</p>
+<div class = "labs" id="labs">
+    <p><br><center><strong><h1>Hands-On Labs</strong></h1></center></p>
+    <br>
+    <center>
+    <p><span class="w3-display-container"><h3>These labs are an excellent supplement to the above workshop slides. They can either be instructor-led or self-paced.</h3></span></p><br>
+  
+        <dl>
+            <p class="tab"><dt><strong><a href="https://www.microsoft.com/handsonlabs/selfpacedlabs">Product deep-dive labs</a></strong></dt></p>
+            <dd>To search for Azure Cosmos DB labs, open the <strong>Product</strong> section and select <strong>Azure Cosmos DB</strong>. <br>
+            These labs are available free or charge. You will use pre-provisioned resources to complete the labs. 
+          <br> All lab deep-dive lab content is also available in our <a href="https://cosmosdb.github.io/labs/"> workshop content repository</a></dd>  
+            <br>
+            <br>
+            <p class="tab"><dt><strong><a href="https://github.com/Microsoft/MCW-Cosmos-DB-Real-Time-Advanced-Analytics">Microsoft Cloud Workshop - Azure Cosmos DB real-time advanced analytics</a></strong></dt></p>
+            <dd>This lab highlights the role of Azure services, including Azure Cosmos DB, in a building a real-time fraud detection system.</dd>  
+            <br>
+            <br>
+        </dl>
+    </center>
+  </div>
+    <!-- Contact Us -->
+    <div class = "contact">
+    <p><br><center><strong><h1 id="contact">Contact Us</strong></h1></center></p>
+    <br>
+    <center>
+    <img src="./images/cosmos-logo.png" alt="Azure Cosmos DB Logo">
+    <br>
+    <br>
+        <p><strong>Interested in learning more? <br> Want to know the next time we will be in your city?</strong><br> Reach out to us at AskCosmosDB@microsoft.com</p>
+    </center>
+    </div>
   
 
 <!-- End page content -->
